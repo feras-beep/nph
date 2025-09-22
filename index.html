@@ -3,602 +3,533 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NPH Audit Guide - How to Fill In Each Column</title>
+    <title>NPH Audit Guide - Complete</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-4 md:p-8">
     <div class="max-w-5xl mx-auto">
-        <!-- Header -->
         <div class="text-center mb-8">
-            <div class="flex items-center justify-center mb-4">
-                <svg class="w-12 h-12 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                </svg>
-                <h1 class="text-4xl md:text-5xl font-bold text-white">NPH Audit Guide</h1>
-            </div>
-            <p class="text-purple-200 text-lg">Simple explanations for each data field</p>
-            <p class="text-purple-300 text-sm mt-2">A step-by-step guide for medical students</p>
+            <h1 class="text-4xl font-bold text-white mb-2">NPH Audit Data Collection Guide</h1>
+            <p class="text-purple-200">Complete explanations for all 74 fields</p>
         </div>
 
-        <!-- Guide Sections -->
         <div class="space-y-6">
-            <!-- Section 1: Demographics -->
+            
+            <!-- SECTION 1 -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-blue-500 to-cyan-500 p-3 rounded-xl">👤</div>
-                    <h2 class="text-2xl font-bold text-white">Patient Demographics</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Hospital Number</h3>
-                        <p class="text-purple-100 text-sm">The unique ID for the patient in your hospital system (e.g., MRN123456)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Links all audit data to one patient and allows follow-up</p>
+                <h2 class="text-2xl font-bold text-white mb-4">Section 1: Patient Demographics</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Hospital Number</h3>
+                        <p class="text-purple-100 text-sm">The unique patient ID (e.g., MRN123456)</p>
+                        <p class="text-purple-200 text-xs italic">Why: Links all data to one patient</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Age</h3>
-                        <p class="text-purple-100 text-sm">Patient's age in years at time of shunt surgery</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: NPH is more common in elderly patients; age affects outcomes</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Age</h3>
+                        <p class="text-purple-100 text-sm">Age in years at time of surgery</p>
+                        <p class="text-purple-200 text-xs italic">Why: NPH more common in elderly; age affects outcomes</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Gender</h3>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Gender</h3>
                         <p class="text-purple-100 text-sm">Male/Female/Other</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Check if there are gender differences in presentation or outcomes</p>
+                        <p class="text-purple-200 text-xs italic">Why: Check for gender differences</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Ethnicity</h3>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Ethnicity</h3>
                         <p class="text-purple-100 text-sm">Patient's ethnic background</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Helps identify if NPH affects certain populations differently</p>
+                        <p class="text-purple-200 text-xs italic">Why: Identify population differences</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Post code</h3>
-                        <p class="text-purple-100 text-sm">First part of patient's postal code (for anonymity)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Shows geographic distribution and travel distances to clinic</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Post code</h3>
+                        <p class="text-purple-100 text-sm">First part of postal code</p>
+                        <p class="text-purple-200 text-xs italic">Why: Geographic distribution and travel distance</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 2: Referral -->
+            <!-- SECTION 2 -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-xl">📋</div>
-                    <h2 class="text-2xl font-bold text-white">Referral & Initial Assessment</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Date of initial referral</h3>
-                        <p class="text-purple-100 text-sm">When the GP or another doctor first referred the patient to neurology/neurosurgery</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Helps calculate how long patients wait for assessment</p>
+                <h2 class="text-2xl font-bold text-white mb-4">Section 2: Referral & Initial Assessment</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Date of initial referral</h3>
+                        <p class="text-purple-100 text-sm">When GP/doctor referred to neurology</p>
+                        <p class="text-purple-200 text-xs italic">Why: Calculate waiting times</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Date of first clinic</h3>
-                        <p class="text-purple-100 text-sm">When the patient was first seen in outpatient clinic</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Measures waiting times - important for service quality</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Date of first clinic</h3>
+                        <p class="text-purple-100 text-sm">First outpatient appointment</p>
+                        <p class="text-purple-200 text-xs italic">Why: Service quality indicator</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Referral pathway - Local vs Non local</h3>
-                        <p class="text-purple-100 text-sm">Was patient referred from your local area or from another region?</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Shows if you're a regional center; affects service planning</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Referral pathway - Local vs Non local</h3>
+                        <p class="text-purple-100 text-sm">Local area or other region?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Shows if regional center</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Referral to first clinic interval (days)</h3>
-                        <p class="text-purple-100 text-sm">Calculate: Date of first clinic - Date of referral</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Key performance indicator; are patients seen quickly enough?</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Referral to first clinic interval</h3>
+                        <p class="text-purple-100 text-sm">Days between referral and first clinic</p>
+                        <p class="text-purple-200 text-xs italic">Why: Key performance indicator</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Duration of symptoms before intervention</h3>
-                        <p class="text-purple-100 text-sm">How long in months/years did the patient have symptoms before getting the shunt?</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Longer symptom duration may mean worse outcomes</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Duration of symptoms before intervention</h3>
+                        <p class="text-purple-100 text-sm">Months/years with symptoms before shunt</p>
+                        <p class="text-purple-200 text-xs italic">Why: Longer duration may mean worse outcomes</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 3: Clinical Assessment -->
+            <!-- SECTION 3 -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-green-500 to-emerald-500 p-3 rounded-xl">🩺</div>
-                    <h2 class="text-2xl font-bold text-white">Pre-operative Clinical Assessment</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Classic NPH triad documentation</h3>
-                        <p class="text-purple-100 text-sm">Which of the three classic symptoms were present? Tick: Gait disturbance / Cognitive impairment / Urinary incontinence</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: NPH diagnosis requires these symptoms; helps predict who responds to shunt</p>
+                <h2 class="text-2xl font-bold text-white mb-4">Section 3: Pre-operative Clinical Assessment</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Classic NPH triad documentation</h3>
+                        <p class="text-purple-100 text-sm">Gait/Cognitive/Urinary symptoms present?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Diagnosis requires these; predicts response</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Pre-shunt gait assessment score</h3>
-                        <p class="text-purple-100 text-sm">Use standardized tool (e.g., Timed Up and Go test, walking speed). Record the score and which test was used</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Objective baseline to compare post-shunt improvement</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Pre-shunt gait assessment score</h3>
+                        <p class="text-purple-100 text-sm">Baseline walking test (TUG, walking speed)</p>
+                        <p class="text-purple-200 text-xs italic">Why: Compare to post-op improvement</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Pre-shunt cognition assessment score</h3>
-                        <p class="text-purple-100 text-sm">Record score from MMSE, MoCA, or other cognitive test used</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Measures baseline cognitive function to track improvement</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Pre-shunt cognition assessment score</h3>
+                        <p class="text-purple-100 text-sm">MMSE, MoCA or other test score</p>
+                        <p class="text-purple-200 text-xs italic">Why: Baseline cognitive function</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Urinary symptoms severity - Pre-shunt</h3>
-                        <p class="text-purple-100 text-sm">Describe: None / Urgency / Frequency / Incontinence (or use urinary symptom score if documented)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Urinary symptoms often improve with shunting; need baseline</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Urinary symptoms severity - Pre-shunt</h3>
+                        <p class="text-purple-100 text-sm">None/Urgency/Frequency/Incontinence</p>
+                        <p class="text-purple-200 text-xs italic">Why: Baseline for improvement tracking</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Comorbidities</h3>
-                        <p class="text-purple-100 text-sm">List other medical conditions: hypertension, diabetes, heart disease, etc.</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Comorbidities affect surgical risk and recovery</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Comorbidities</h3>
+                        <p class="text-purple-100 text-sm">Other conditions: HTN, diabetes, etc.</p>
+                        <p class="text-purple-200 text-xs italic">Why: Affects surgical risk</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Charlston comorbidity index</h3>
-                        <p class="text-purple-100 text-sm">A score (0-37) that quantifies medical comorbidities. Calculate or find in notes</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Standardized way to measure how sick the patient is overall</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Charlston comorbidity index</h3>
+                        <p class="text-purple-100 text-sm">Score 0-37 quantifying comorbidities</p>
+                        <p class="text-purple-200 text-xs italic">Why: Standardized measure of patient health</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Previous treatments or interventions</h3>
-                        <p class="text-purple-100 text-sm">List any prior treatments: medications, physiotherapy, previous surgeries</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Shows what was tried before shunting; affects outcomes</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Previous treatments or interventions</h3>
+                        <p class="text-purple-100 text-sm">Prior meds, physio, surgeries</p>
+                        <p class="text-purple-200 text-xs italic">Why: Shows what was tried first</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Continue in next section due to length... -->
-            <div class="bg-purple-500/20 backdrop-blur-lg rounded-xl p-4 border border-purple-500/30 text-center">
-                <p class="text-purple-100">Scroll down for Sections 4-11 ⬇️</p>
-            </div>
-
-            <!-- Section 4: Imaging -->
+            <!-- SECTION 4 -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-orange-500 to-amber-500 p-3 rounded-xl">🔬</div>
-                    <h2 class="text-2xl font-bold text-white">Pre-operative Imaging & Investigations</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">MRI available on our system?</h3>
-                        <p class="text-purple-100 text-sm">Yes/No - Can you see their MRI scan on your hospital PACS?</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Quality check - should review imaging, not just reports</p>
+                <h2 class="text-2xl font-bold text-white mb-4">Section 4: Pre-operative Imaging & Investigations</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">MRI available on our system?</h3>
+                        <p class="text-purple-100 text-sm">Can you see scan on PACS? Yes/No</p>
+                        <p class="text-purple-200 text-xs italic">Why: Should review images, not just reports</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Pre-shunt imaging findings</h3>
-                        <p class="text-purple-100 text-sm">Record Evans index (>0.3 suggests hydrocephalus), DESH sign, callosal angle (<90° suggests NPH)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: These features help diagnose NPH and predict shunt response</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Pre-shunt imaging findings</h3>
+                        <p class="text-purple-100 text-sm">Evans index, DESH, callosal angle</p>
+                        <p class="text-purple-200 text-xs italic">Why: Diagnostic features; predict response</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">iNPH radscale</h3>
-                        <p class="text-purple-100 text-sm">Mark if score was <4 or ≥4</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Score ≥4 suggests likely NPH</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">iNPH radscale</h3>
+                        <p class="text-purple-100 text-sm">Score <4 or ≥4</p>
+                        <p class="text-purple-200 text-xs italic">Why: ≥4 suggests likely NPH</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Date of LP/LD assessment</h3>
-                        <p class="text-purple-100 text-sm">When did they have lumbar puncture or lumbar drain?</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Tracks timing of diagnostic workup</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Date of LP/LD assessment</h3>
+                        <p class="text-purple-100 text-sm">When lumbar puncture/drain done</p>
+                        <p class="text-purple-200 text-xs italic">Why: Track diagnostic timeline</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">LP vs LD vs both</h3>
-                        <p class="text-purple-100 text-sm">What test was done? Single lumbar puncture / Lumbar drain / Both</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Different tests; LD may be more sensitive but more invasive</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">LP vs LD vs both</h3>
+                        <p class="text-purple-100 text-sm">Which test performed?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Different sensitivity/invasiveness</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">CSF opening pressure</h3>
-                        <p class="text-purple-100 text-sm">Record pressure in cmH₂O (normal: 10-20)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: NPH should have normal pressure; very high suggests different diagnosis</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">CSF opening pressure</h3>
+                        <p class="text-purple-100 text-sm">Pressure in cmH₂O (normal 10-20)</p>
+                        <p class="text-purple-200 text-xs italic">Why: Should be normal in NPH</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Volume of CSF removed during tap test</h3>
-                        <p class="text-purple-100 text-sm">How many mL of CSF was taken out? Usually 30-50mL</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: More volume removed may better predict shunt response</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Volume of CSF removed during tap test</h3>
+                        <p class="text-purple-100 text-sm">How many mL? Usually 30-50mL</p>
+                        <p class="text-purple-200 text-xs italic">Why: More volume may better predict response</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Days of LD drainage</h3>
-                        <p class="text-purple-100 text-sm">If they had a lumbar drain, how many days? Usually 2-5 days</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Longer drainage improves prediction but increases infection risk</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Days of LD drainage</h3>
+                        <p class="text-purple-100 text-sm">If lumbar drain: how many days?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Longer = better prediction but higher infection risk</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Documentation of outcome of the LD assessment</h3>
-                        <p class="text-purple-100 text-sm">Was improvement documented? Positive/Negative/Equivocal</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Positive tap test strongly predicts good shunt response</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Documentation of outcome of the LD assessment</h3>
+                        <p class="text-purple-100 text-sm">Positive/Negative/Equivocal improvement?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Positive test predicts good shunt response</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Dementia markers sent?</h3>
-                        <p class="text-purple-100 text-sm">Were CSF tests done for Alzheimer's? (Beta-amyloid, tau protein)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Rules out other causes of dementia that won't respond to shunt</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Dementia markers sent?</h3>
+                        <p class="text-purple-100 text-sm">CSF tests for Alzheimer's (amyloid, tau)?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Rule out other dementia causes</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 5: MDT -->
+            <!-- SECTION 5 -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-indigo-500 to-purple-500 p-3 rounded-xl">👥</div>
-                    <h2 class="text-2xl font-bold text-white">MDT & Decision Making</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Date of MDT discussion</h3>
-                        <p class="text-purple-100 text-sm">When was the case discussed at multidisciplinary team meeting?</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Good practice requires team discussion before major surgery</p>
+                <h2 class="text-2xl font-bold text-white mb-4">Section 5: MDT & Decision Making</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Date of MDT discussion</h3>
+                        <p class="text-purple-100 text-sm">When case discussed at team meeting</p>
+                        <p class="text-purple-200 text-xs italic">Why: Best practice before major surgery</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">MDT members present</h3>
-                        <p class="text-purple-100 text-sm">Who attended? E.g., Neurosurgeon, Neurologist, Geriatrician, Radiologist</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Shows quality of team input; diverse expertise improves decisions</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">MDT members present</h3>
+                        <p class="text-purple-100 text-sm">Specialties attending (Neurosurg, Neuro, Geri, etc.)</p>
+                        <p class="text-purple-200 text-xs italic">Why: Diverse expertise improves decisions</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">MDT recommendations</h3>
-                        <p class="text-purple-100 text-sm">What did the team suggest? Proceed with shunt / Further tests / Conservative</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Records clinical reasoning and shared decision making</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">MDT recommendations</h3>
+                        <p class="text-purple-100 text-sm">Shunt/Further tests/Conservative?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Records clinical reasoning</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">MDT decision-making process - outcome</h3>
-                        <p class="text-purple-100 text-sm">Final decision: Shunt / No shunt / Delayed decision</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Captures final consensus; important for governance</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">MDT decision-making process - outcome</h3>
+                        <p class="text-purple-100 text-sm">Final decision: Shunt/No shunt/Delayed</p>
+                        <p class="text-purple-200 text-xs italic">Why: Captures consensus; governance</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Diagnostic criteria used</h3>
-                        <p class="text-purple-100 text-sm">Which guidelines? E.g., International iNPH guidelines, Japanese guidelines</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Ensures evidence-based practice; allows comparison with other centers</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Diagnostic criteria used</h3>
+                        <p class="text-purple-100 text-sm">Which guidelines followed?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Evidence-based practice; benchmarking</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Prognostic score/likelihood of response</h3>
-                        <p class="text-purple-100 text-sm">Was a prediction score calculated? Record percentage chance of improvement</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Helps set realistic expectations and inform consent</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Prognostic score/likelihood of response</h3>
+                        <p class="text-purple-100 text-sm">Prediction score or % chance calculated?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Set expectations; inform consent</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Reason for shunt vs no shunt decision</h3>
-                        <p class="text-purple-100 text-sm">Brief explanation: "Positive tap test and classic triad" or "Too high surgical risk"</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Audit of clinical reasoning; learning from decisions</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Reason for shunt vs no shunt decision</h3>
+                        <p class="text-purple-100 text-sm">Brief explanation of decision</p>
+                        <p class="text-purple-200 text-xs italic">Why: Audit clinical reasoning</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Clinic prior to shunt placement?</h3>
-                        <p class="text-purple-100 text-sm">Was patient seen in clinic after tap test but before surgery?</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Shows pathway - some go straight to surgery, others reviewed first</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Clinic prior to shunt placement?</h3>
+                        <p class="text-purple-100 text-sm">Seen after tap test before surgery?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Shows pathway variation</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 6: Surgery -->
+            <!-- SECTION 6 -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-red-500 to-rose-500 p-3 rounded-xl">⚕️</div>
-                    <h2 class="text-2xl font-bold text-white">Operative Details</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Date of admission</h3>
-                        <p class="text-purple-100 text-sm">When patient came into hospital for surgery</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Helps calculate length of stay</p>
+                <h2 class="text-2xl font-bold text-white mb-4">Section 6: Operative Details</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Date of admission</h3>
+                        <p class="text-purple-100 text-sm">When admitted for surgery</p>
+                        <p class="text-purple-200 text-xs italic">Why: Calculate length of stay</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Date of shunt placement</h3>
-                        <p class="text-purple-100 text-sm">Actual surgery date - check operation note</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Key date for calculating all follow-up intervals</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Date of shunt placement</h3>
+                        <p class="text-purple-100 text-sm">Actual surgery date</p>
+                        <p class="text-purple-200 text-xs italic">Why: Key date for follow-up calculations</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Type of valve used</h3>
-                        <p class="text-purple-100 text-sm">Brand/model. E.g., Codman Hakim, Medtronic Strata, proGAV</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Different valves have different complication rates</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Type of valve used</h3>
+                        <p class="text-purple-100 text-sm">Brand/model (Hakim, Strata, proGAV)</p>
+                        <p class="text-purple-200 text-xs italic">Why: Different complication rates</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Initial valve settings</h3>
-                        <p class="text-purple-100 text-sm">For adjustable valves: initial pressure setting? E.g., "Level 1.5"</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Baseline for adjustments; different settings may affect outcomes</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Initial valve settings</h3>
+                        <p class="text-purple-100 text-sm">Pressure setting for adjustable valves</p>
+                        <p class="text-purple-200 text-xs italic">Why: Baseline for future adjustments</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Lateralisation</h3>
-                        <p class="text-purple-100 text-sm">Which side? Right/Left</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Surgeon preference; useful if comparing outcomes by side</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Lateralisation</h3>
+                        <p class="text-purple-100 text-sm">Right or Left side?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Compare outcomes by side</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Distal catheter location</h3>
-                        <p class="text-purple-100 text-sm">Where does CSF drain? Peritoneal (abdomen) / Atrial (heart) / Pleural (chest)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Peritoneal is commonest; others used if abdomen not suitable</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Distal catheter location</h3>
+                        <p class="text-purple-100 text-sm">Peritoneal/Atrial/Pleural?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Different locations for different patients</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Surgeon grade/experience</h3>
-                        <p class="text-purple-100 text-sm">Who did it? Consultant / Registrar / Both (supervised)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Training audit; may affect complication rates</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Surgeon grade/experience</h3>
+                        <p class="text-purple-100 text-sm">Consultant/Registrar/Supervised?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Training audit; may affect complications</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Use of neuronavigation</h3>
-                        <p class="text-purple-100 text-sm">Was computer guidance used? Yes/No</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Helps accurate catheter placement; may reduce revisions</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Use of neuronavigation</h3>
+                        <p class="text-purple-100 text-sm">Computer guidance used? Yes/No</p>
+                        <p class="text-purple-200 text-xs italic">Why: May improve accuracy; reduce revisions</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Intraoperative complications</h3>
-                        <p class="text-purple-100 text-sm">Any problems during surgery? None / Bleeding / Difficult placement / Other</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Important safety data; affects post-op management</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Intraoperative complications</h3>
+                        <p class="text-purple-100 text-sm">Problems during surgery?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Safety data; affects management</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 7: Post-op Care -->
+            <!-- SECTION 7 -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-teal-500 to-cyan-500 p-3 rounded-xl">🏥</div>
-                    <h2 class="text-2xl font-bold text-white">Post-operative Care</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Post-operative complications</h3>
-                        <p class="text-purple-100 text-sm">Any problems? None / Infection / Subdural haematoma / Seizure / Confusion</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Critical safety measure; identifies high-risk patients</p>
+                <h2 class="text-2xl font-bold text-white mb-4">Section 7: Post-operative Care</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Post-operative complications</h3>
+                        <p class="text-purple-100 text-sm">Infection/Subdural/Seizure/Other?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Critical safety measure</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Discharge date</h3>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Discharge date</h3>
                         <p class="text-purple-100 text-sm">When patient went home</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Calculates length of stay</p>
+                        <p class="text-purple-200 text-xs italic">Why: Calculate length of stay</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Length of hospital stay</h3>
-                        <p class="text-purple-100 text-sm">Calculate: Discharge date - Admission date (in days)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Efficiency measure; longer stays may indicate complications</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Length of hospital stay</h3>
+                        <p class="text-purple-100 text-sm">Days: Discharge - Admission</p>
+                        <p class="text-purple-200 text-xs italic">Why: Efficiency; longer = complications?</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb
-                            <div class="space-y-4">
-             
-                   
-                   
-          <div class="space-y-4">
-                            <!-- SECTION 8: FOLLOW-UP & OUTCOMES -->
-            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 p-3 rounded-xl">📊</div>
-                    <h2 class="text-2xl font-bold text-white">Section 8: Follow-up & Outcomes</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Follow-up duration</h3>
-                        <p class="text-purple-100 text-sm">How many months from surgery to last clinic appointment?</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Shows how long patients are monitored; longer follow-up gives better outcome data</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Number of clinics post shunt</h3>
-                        <p class="text-purple-100 text-sm">Count outpatient appointments after surgery</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Resource use; complicated cases need more visits</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Time of first clinic letter post shunt</h3>
-                        <p class="text-purple-100 text-sm">How many weeks/months after surgery was first follow-up?</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Standard should be 6-12 weeks; quality check for timely review</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Number of follow-up visits</h3>
-                        <p class="text-purple-100 text-sm">Total number of times seen (clinic + emergency + other)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Overall healthcare utilization</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Number of ward attender reviews</h3>
-                        <p class="text-purple-100 text-sm">How many times did patient come to day unit/ward for valve adjustments?</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Measures need for shunt optimization</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Time to symptom improvement (weeks/months)</h3>
-                        <p class="text-purple-100 text-sm">When did patient/family first notice improvement? Record in weeks or months</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Some improve quickly (days), others slowly (months); helps predict success</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Which symptom improved most (gait/cognitive/urinary)</h3>
-                        <p class="text-purple-100 text-sm">Gait / Cognition / Urinary / Equal / None</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Gait usually improves most; helps predict who benefits from shunting</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Functional outcomes (symptom improvement, QoL)</h3>
-                        <p class="text-purple-100 text-sm">Overall: Significant improvement / Mild improvement / No change / Worse</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Main outcome measure; was surgery worth it?</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Patient-reported outcome measures used</h3>
-                        <p class="text-purple-100 text-sm">Which questionnaires? E.g., NPH scale, SF-36, modified Rankin Scale</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Standardized tools give objective outcome data for comparison</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Post-shunt gait assessment</h3>
-                        <p class="text-purple-100 text-sm">Repeat same test as pre-op. Record score at best follow-up</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Compare to baseline; shows objective improvement in walking</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Post-shunt cognitive assessment</h3>
-                        <p class="text-purple-100 text-sm">Repeat cognitive test. Record best score</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Cognition may improve slower than gait; need objective measure</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Post-shunt urinary assessment</h3>
-                        <p class="text-purple-100 text-sm">Urinary symptoms at follow-up: Resolved / Improved / Same / Worse</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Complete picture of NPH triad improvement</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Mobility status - aids post shunt</h3>
-                        <p class="text-purple-100 text-sm">What help needed now? None / Stick / Walker / Wheelchair</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Practical measure of independence; compare to pre-op mobility</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Caregiver burden assessment</h3>
-                        <p class="text-purple-100 text-sm">If documented: did caregiver burden reduce? Yes/No/Not assessed</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Patient improvement should reduce family stress and caring responsibilities</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">30-day readmission</h3>
+                        <p class="text-purple-100 text-sm">Returned within 30 days? Why?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Quality indicator; often preventable</p>
                     </div>
                 </div>
             </div>
 
-            <!-- SECTION 9: IMAGING FOLLOW-UP -->
+            <!-- SECTION 8 -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-sky-500 to-blue-500 p-3 rounded-xl">🖼️</div>
-                    <h2 class="text-2xl font-bold text-white">Section 9: Imaging Follow-up</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Number of radiological scans post shunt</h3>
-                        <p class="text-purple-100 text-sm">Count CT/MRI scans done after surgery (routine + emergency)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Resource use; more scans may indicate problems or complications</p>
+                <h2 class="text-2xl font-bold text-white mb-4">Section 8: Follow-up & Outcomes</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Follow-up duration</h3>
+                        <p class="text-purple-100 text-sm">Months from surgery to last clinic</p>
+                        <p class="text-purple-200 text-xs italic">Why: Longer follow-up = better outcome data</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">First scan post shunt after discharge - number of weeks</h3>
-                        <p class="text-purple-100 text-sm">How soon after going home was first scan? (Skip if done before discharge)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Some centers do routine 6-week scans; identifies early complications</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Number of clinics post shunt</h3>
+                        <p class="text-purple-100 text-sm">Count outpatient appointments</p>
+                        <p class="text-purple-200 text-xs italic">Why: Resource use; complex cases need more</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Post-shunt imaging results</h3>
-                        <p class="text-purple-100 text-sm">Summary: Ventricles smaller / Same / Larger / Subdural collection / Other findings</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Smaller ventricles confirm shunt working; larger may mean blockage; subdurals suggest overdrainage</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Time of first clinic letter post shunt</h3>
+                        <p class="text-purple-100 text-sm">Weeks/months to first follow-up</p>
+                        <p class="text-purple-200 text-xs italic">Why: Should be 6-12 weeks; quality check</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Number of follow-up visits</h3>
+                        <p class="text-purple-100 text-sm">Total visits (clinic + emergency)</p>
+                        <p class="text-purple-200 text-xs italic">Why: Overall healthcare utilization</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Number of ward attender reviews</h3>
+                        <p class="text-purple-100 text-sm">Day unit visits for valve adjustments</p>
+                        <p class="text-purple-200 text-xs italic">Why: Need for shunt optimization</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Time to symptom improvement</h3>
+                        <p class="text-purple-100 text-sm">Weeks/months to first improvement</p>
+                        <p class="text-purple-200 text-xs italic">Why: Quick vs slow responders; predict success</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Which symptom improved most</h3>
+                        <p class="text-purple-100 text-sm">Gait/Cognition/Urinary/Equal/None?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Gait usually improves most</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Functional outcomes</h3>
+                        <p class="text-purple-100 text-sm">Significant/Mild/No change/Worse?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Main outcome - was surgery worthwhile?</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Patient-reported outcome measures used</h3>
+                        <p class="text-purple-100 text-sm">Which tools? NPH scale, SF-36, mRS?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Standardized objective data</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Post-shunt gait assessment</h3>
+                        <p class="text-purple-100 text-sm">Repeat same test as pre-op</p>
+                        <p class="text-purple-200 text-xs italic">Why: Compare to baseline</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Post-shunt cognitive assessment</h3>
+                        <p class="text-purple-100 text-sm">Repeat cognitive test</p>
+                        <p class="text-purple-200 text-xs italic">Why: Cognition may improve slower than gait</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Post-shunt urinary assessment</h3>
+                        <p class="text-purple-100 text-sm">Resolved/Improved/Same/Worse?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Complete NPH triad picture</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Mobility status - aids post shunt</h3>
+                        <p class="text-purple-100 text-sm">None/Stick/Walker/Wheelchair?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Practical independence measure</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Caregiver burden assessment</h3>
+                        <p class="text-purple-100 text-sm">Did burden reduce? Yes/No/Not assessed</p>
+                        <p class="text-purple-200 text-xs italic">Why: Improvement should reduce family stress</p>
                     </div>
                 </div>
             </div>
 
-            <!-- SECTION 10: COMPLICATIONS & INTERVENTIONS -->
+            <!-- SECTION 9 -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-yellow-500 to-orange-500 p-3 rounded-xl">⚠️</div>
-                    <h2 class="text-2xl font-bold text-white">Section 10: Complications & Interventions</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Shunt malfunction</h3>
-                        <p class="text-purple-100 text-sm">Did shunt stop working? Yes/No (if yes, note when it happened)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Common complication (10-40% of patients); affects long-term success</p>
+                <h2 class="text-2xl font-bold text-white mb-4">Section 9: Imaging Follow-up</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Number of radiological scans post shunt</h3>
+                        <p class="text-purple-100 text-sm">Count CT/MRI after surgery</p>
+                        <p class="text-purple-200 text-xs italic">Why: More scans may indicate problems</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Shunt infection</h3>
-                        <p class="text-purple-100 text-sm">Any infection? Yes/No (if yes, note when and organism if known)</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Serious complication (5-15% of cases); usually needs shunt removal and antibiotics</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">First scan post shunt after discharge</h3>
+                        <p class="text-purple-100 text-sm">How many weeks after going home?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Routine 6-week scans; identify early complications</p>
                     </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Shunt revision reason (overdrainage/underdrainage/mechanical)</h3>
-                        <p class="text-purple-100 text-sm">If revised, why? Overdrainage (subdural) / Underdrainage (blocked) / Mechanical failure / Infection</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Identifies which problems are most common; helps improve future practice and valve selection</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Re-intervention rates</h3>
-                        <p class="text-purple-100 text-sm">How many operations after initial shunt? Count all revisions/adjustments requiring surgery</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Multiple operations indicate complexity; affects cost and patient burden</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Morbidity (e.g., subdural haematoma)</h3>
-                        <p class="text-purple-100 text-sm">Specific complications: Subdural collection / Seizures / Stroke / Other</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Safety monitoring; subdurals are common with overdrainage and may need treatment</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Shunt setting changes - clinic letters</h3>
-                        <p class="text-purple-100 text-sm">For programmable valves: were settings adjusted? How many times? What levels?</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Shows need for fine-tuning; programmable valves avoid repeat surgery</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">Changes in management/additional interventions</h3>
-                        <p class="text-purple-100 text-sm">Any other treatments needed? Rehab / New medications / Other procedures</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Complete picture of patient journey and overall resource use</p>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Post-shunt imaging results</h3>
+                        <p class="text-purple-100 text-sm">Ventricles smaller/same/larger/subdural?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Confirms shunt working or shows complications</p>
                     </div>
                 </div>
             </div>
 
-            <!-- SECTION 11: FINAL OUTCOME -->
+            <!-- SECTION 10 -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="text-3xl bg-gradient-to-r from-slate-500 to-gray-500 p-3 rounded-xl">📝</div>
-                    <h2 class="text-2xl font-bold text-white">Section 11: Final Outcome</h2>
-                </div>
-                <div class="space-y-4">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h3 class="text-purple-300 font-semibold mb-2">RIP date</h3>
-                        <p class="text-purple-100 text-sm">If patient died during follow-up period, record the date. Leave blank if patient is alive</p>
-                        <p class="text-purple-200 text-xs mt-1 italic">Why: Mortality data; helps calculate survival rates; death may be related to surgery, shunt complications, or unrelated causes</p>
+                <h2 class="text-2xl font-bold text-white mb-4">Section 10: Complications & Interventions</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Shunt malfunction</h3>
+                        <p class="text-purple-100 text-sm">Did it stop working? When?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Common (10-40%); affects success</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Shunt infection</h3>
+                        <p class="text-purple-100 text-sm">Any infection? When? Organism?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Serious (5-15%); usually needs removal</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Shunt revision reason</h3>
+                        <p class="text-purple-100 text-sm">Overdrainage/Underdrainage/Mechanical/Infection?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Identify common problems; improve practice</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Re-intervention rates</h3>
+                        <p class="text-purple-100 text-sm">How many operations after initial shunt?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Multiple surgeries = complexity, cost, burden</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Morbidity (subdural haematoma)</h3>
+                        <p class="text-purple-100 text-sm">Subdural/Seizures/Stroke/Other?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Safety; subdurals common with overdrainage</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Shunt setting changes</h3>
+                        <p class="text-purple-100 text-sm">Adjustments? How many? What levels?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Programmable valves avoid repeat surgery</p>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">Changes in management/additional interventions</h3>
+                        <p class="text-purple-100 text-sm">Rehab/New meds/Other procedures?</p>
+                        <p class="text-purple-200 text-xs italic">Why: Complete patient journey picture</p>
                     </div>
                 </div>
             </div>
 
-            <!-- TIPS SECTION -->
-            <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-2xl p-6 border border-purple-500/30">
-                <h2 class="text-2xl font-bold text-white mb-4">💡 Top Tips for Data Collection</h2>
-                <div class="space-y-3 text-purple-100">
-                    <div class="flex items-start">
-                        <span class="text-purple-300 mr-2 font-bold">1.</span>
-                        <p><strong>Start with the operation note</strong> - it has the hospital number, dates, valve type, and surgical details</p>
+            <!-- SECTION 11 -->
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
+                <h2 class="text-2xl font-bold text-white mb-4">Section 11: Final Outcome</h2>
+                <div class="space-y-3">
+                    <div class="bg-white/5 p-3 rounded-lg">
+                        <h3 class="text-purple-300 font-semibold">RIP date</h3>
+                        <p class="text-purple-100 text-sm">If died during follow-up, record date. Blank if alive</p>
+                        <p class="text-purple-200 text-xs italic">Why: Mortality data; may/may not be surgery-related</p>
                     </div>
-                    <div class="flex items-start">
-                        <span class="text-purple-300 mr-2 font-bold">2.</span>
-                        <p><strong>Check clinic letters chronologically</strong> - first letter has baseline assessments, latest has outcomes</p>
-                    </div>
-                    <div class="flex items-start">
-                        <span class="text-purple-300 mr-2 font-bold">3.</span>
-                        <p><strong>Look for imaging reports in radiology system</strong> - don't just rely on written descriptions in letters</p>
-                    </div>
-                    <div class="flex items-start">
-                        <span class="text-purple-300 mr-2 font-bold">4.</span>
-                        <p><strong>If data is missing, write "Not documented"</strong> - this itself is useful audit information about documentation quality!</p>
-                    </div>
-                    <div class="flex items-start">
-                        <span class="text-purple-300 mr-2 font-bold">5.</span>
-                        <p><strong>Calculate dates carefully</strong> - use a date calculator online to avoid arithmetic errors</p>
-                    </div>
-                    <div class="flex items-start">
-                        <span class="text-purple-300 mr-2 font-bold">6.</span>
-                        <p><strong>Ask seniors if unclear</strong> - better to ask than guess and get data wrong</p>
-                    </div>
-                    <div class="flex items-start">
-                        <span class="text-purple-300 mr-2 font-bold">7.</span>
-                        <p><strong>Be consistent</strong> - if you use "Timed Up and Go" for one patient, use it for all patients</p>
-                    </div>
-                    <div class="flex items-start">
-                        <span class="text-purple-300 mr-2 font-bold">8.</span>
-                        <p><strong>Double-check hospital numbers</strong> - wrong patient = all your data becomes useless</p>
-                    </div>
+                </div>
+            </div>
+
+            <!-- TIPS -->
+            <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl p-6 border border-purple-500/30">
+                <h2 class="text-2xl font-bold text-white mb-4">💡 Data Collection Tips</h2>
+                <div class="space-y-2 text-purple-100 text-sm">
+                    <p>• <strong>Start with operation note</strong> - has ID, dates, valve details</p>
+                    <p>• <strong>Check clinic letters chronologically</strong> - first = baseline, latest = outcomes</p>
+                    <p>• <strong>Review actual images</strong> on PACS, not just reports</p>
+                    <p>• <strong>Write "Not documented"</strong> if missing - this is useful data!</p>
+                    <p>• <strong>Use date calculator</strong> online to avoid errors</p>
+                    <p>• <strong>Ask if unclear</strong> - better than guessing</p>
+                    <p>• <strong>Be consistent</strong> - same tests/measures for all patients</p>
+                    <p>• <strong>Double-check hospital numbers</strong> - wrong patient = useless data</p>
                 </div>
             </div>
 
             <!-- ABBREVIATIONS -->
             <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-                <h2 class="text-2xl font-bold text-white mb-4">📚 Common Abbreviations You'll See</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                    <div class="bg-white/5 p-3 rounded-lg">
+                <h2 class="text-2xl font-bold text-white mb-4">📚 Common Abbreviations</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">NPH:</span>
-                        <span class="text-purple-100 ml-2">Normal Pressure Hydrocephalus</span>
+                        <span class="text-purple-100"> Normal Pressure Hydrocephalus</span>
                     </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">iNPH:</span>
-                        <span class="text-purple-100 ml-2">Idiopathic NPH (unknown cause)</span>
+                        <span class="text-purple-100"> Idiopathic NPH</span>
                     </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">LP:</span>
-                        <span class="text-purple-100 ml-2">Lumbar Puncture (spinal tap)</span>
+                        <span class="text-purple-100"> Lumbar Puncture</span>
                     </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">LD:</span>
-                        <span class="text-purple-100 ml-2">Lumbar Drain</span>
+                        <span class="text-purple-100"> Lumbar Drain</span>
                     </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">CSF:</span>
-                        <span class="text-purple-100 ml-2">Cerebrospinal Fluid</span>
+                        <span class="text-purple-100"> Cerebrospinal Fluid</span>
                     </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">MDT:</span>
-                        <span class="text-purple-100 ml-2">Multidisciplinary Team</span>
+                        <span class="text-purple-100"> Multidisciplinary Team</span>
                     </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">DESH:</span>
-                        <span class="text-purple-100 ml-2">Disproportionately Enlarged Subarachnoid Spaces</span>
+                        <span class="text-purple-100"> Disproportionately Enlarged Subarachnoid Spaces</span>
                     </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">VP shunt:</span>
-                        <span class="text-purple-100 ml-2">Ventriculoperitoneal shunt (to abdomen)</span>
+                        <span class="text-purple-100"> Ventriculoperitoneal shunt</span>
                     </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">MMSE:</span>
-                        <span class="text-purple-100 ml-2">Mini-Mental State Examination</span>
+                        <span class="text-purple-100"> Mini-Mental State Exam</span>
                     </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">MoCA:</span>
-                        <span class="text-purple-100 ml-2">Montreal Cognitive Assessment</span>
+                        <span class="text-purple-100"> Montreal Cognitive Assessment</span>
                     </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
-                        <span class="text-purple-300 font-semibold">QoL:</span>
-                        <span class="text-purple-100 ml-2">Quality of Life</span>
-                    </div>
-                    <div class="bg-white/5 p-3 rounded-lg">
+                    <div class="bg-white/5 p-2 rounded">
                         <span class="text-purple-300 font-semibold">PACS:</span>
-                        <span class="text-purple-100 ml-2">Picture Archiving System (where scans are stored)</span>
+                        <span class="text-purple-100"> Picture Archiving System</span>
+                    </div>
+                    <div class="bg-white/5 p-2 rounded">
+                        <span class="text-purple-300 font-semibold">TUG:</span>
+                        <span class="text-purple-100"> Timed Up and Go test</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Footer -->
             <div class="text-center mt-8 pb-8">
-                <p class="text-purple-300 text-lg font-semibold">Good luck with your audit! 🎯</p>
-                <p class="text-purple-400 text-sm mt-2">Remember: Quality data = Quality audit = Better patient care</p>
+                <p class="text-purple-300 text-lg font-semibold">Good luck with your audit!</p>
+                <p class="text-purple-400 text-sm mt-2">Quality data = Quality audit = Better patient care</p>
             </div>
         </div>
     </div>
